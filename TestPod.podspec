@@ -10,7 +10,7 @@ A demo for cocoapods.
   s.author       = { "Reliable-D" => "dl1990hz@outlook.com" }
   s.platform     = :ios,'7.0'
   s.source       = { :git => "git@github.com:ZHComet/TestPod.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/TP.h"
   s.public_header_files = 'Classes/TP.h'
   s.requires_arc = true
   s.subspec 'TP' do |ss|
