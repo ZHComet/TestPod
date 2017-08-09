@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A short description of TestPod."
   s.description  = <<-DESC
+A demo for cocoapods.
                    DESC
   s.homepage     = "https://github.com/ZHComet/TestPod"
   s.license      = "MIT"
@@ -12,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.public_header_files = 'Classes/TP.h'
   s.requires_arc = true
-  s.subspec 'TP' do |ss|
+  s.subspec 'TestPod' do |ss|
     ss.source_files = 'Classes/**/*.{h,m}'
     ss.public_header_files = 'Classes/**/*.h'
   end
