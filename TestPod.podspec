@@ -13,7 +13,7 @@ A demo for cocoapods.
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.public_header_files = 'Classes/TP.h'
   s.requires_arc = true
-  s.subspec 'TestPod' do |ss|
+  s.subspec 'TP' do |ss|
     ss.source_files = 'Classes/**/*.{h,m}'
     ss.public_header_files = 'Classes/**/*.h'
   end
