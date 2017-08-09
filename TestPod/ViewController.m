@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TP.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray* array = @[@"abc",@"哈哈",@"我是中文"];
+    NSLog(@"array:%@",array);
 }
 
 

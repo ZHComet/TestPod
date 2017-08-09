@@ -10,17 +10,17 @@
 
 @implementation NSArray (TP)
 
--(NSString*)toJsonString
+- (NSString*)toJsonString
 {
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:nil];
     NSString *jsonString =[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
 
-- (NSString*)uTF8Description {
-    NSString *desc = [self description];
-    desc = [NSString stringWithCString:[desc cStringUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding];
-    return desc;
+- (NSString *)descriptionWithLocale:(id)locale
+{
+    NSString* descLocal = [self description];
+    return  [NSString stringWithCString:[descLocal cStringUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding];
 }
 
 @end

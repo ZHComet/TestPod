@@ -10,7 +10,9 @@
 
 @interface NSString (TP)
 
-+(NSString*)safeString:(NSString*)string;
+#define SAFE_STRING(S) [NSString safeString:S]
+
++ (NSString*)safeString:(NSString*)string;
 
 + (NSString*)helloString;
 

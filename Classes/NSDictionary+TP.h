@@ -10,4 +10,6 @@
 
 @interface NSDictionary (TP)
 
+- (NSString*)toJsonString
+
 @end
