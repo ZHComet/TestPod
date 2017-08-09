@@ -10,6 +10,6 @@
 
 @interface NSArray (TP)
 
-- (NSString*)toJsonString
+- (NSString*)toJsonString;
 
 @end
